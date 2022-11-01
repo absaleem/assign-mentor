@@ -1,0 +1,155 @@
+{
+	"info": {
+		"_postman_id": "7a65aa65-7cf2-403a-8a3e-9d1cfaa63d1d",
+		"name": "Nodejs mentor",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createMentor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"ramesh\",\r\n    \"age\":32,\r\n    \"email\":\"ramesh@gmail.com\",\r\n    \"contact_no\":\"7989789779\",\r\n    \"experience\":\"5 yrs\",\r\n    \"company_working\":\"hcl\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/assignmentor/creatementor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"assignmentor",
+						"creatementor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createstudent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"gg\",\r\n    \"age\":32,\r\n    \"email\":\"gg@gmail.com\",\r\n    \"contact_no\":\"9787-0890\",\r\n    \"education\":\"B.sc. computer technology\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/assignmentor/createstudent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"assignmentor",
+						"createstudent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assignStudentmentor",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mentor_id\": \"63517c64c7aa9e137633326e\",\r\n    \"student_id\": [\r\n        \"63517c9ac7aa9e1376333272\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/assignmentor/assignstudentmentor",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"assignmentor",
+						"assignstudentmentor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "listMentorstudents",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mentor_id\":\"63517c71c7aa9e137633326f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/assignmentor/listmentorstudents",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"assignmentor",
+						"listmentorstudents"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "assignstudenttomentor",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"mentor_id\":\"63517c71c7aa9e137633326f\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/assignmentor/changestudentmentor/63517cafc7aa9e1376333275",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"assignmentor",
+						"changestudentmentor",
+						"63517cafc7aa9e1376333275"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
