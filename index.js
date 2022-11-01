@@ -1,5 +1,5 @@
 const express = require("express");
-const Mentorrouter = require("./Router/Mentorrouter");
+const Mentorrouter = require("./router/Mentorrouter");
 const mongo_connection = require("./connect");
 const dotenv=require("dotenv");
 
